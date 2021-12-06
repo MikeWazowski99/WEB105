@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>
+            My Favorite Games
+        </h1>
+        <nav>
+            <div class="navbar">
+                <a href="../index.html">Bio</a>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Dropdown
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                <a href="goals.html">Goals</a>
+                <a href="#">Games</a>
+                <a href="pets.html">My Pets</a>
+                <a href="books.html">Books</a>
+                </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+            <h2>
+                My Favorite Games
+            </h2>
+            <p>
+                I have been playing many games since I was a kid and some of the games that have caught my eye and would recommend to other people would be
+            </p>
+            <img src="/images/Evil.jpg" alt="Evil" id="left">
+            <img src="/images/Sky.png" alt="Skyrim" id="right">
+            <img src="/images/Gang.jpg" alt="Gang">
+            <ul>
+                <li>
+                    The Evil Within
+                </li>
+                <li>
+                    Skyrim
+                </li>
+                <li>
+                    Gang Beasts
+                </li>
+            </ul>
+            <p>These 3 games are amazing to play whether it's by yourself or playing with other people</p>
+            <p>The Evil Within is about a detective who went to Mental Hospital and stumbled upon a mass murder which then lead him to be sent to an unreal world</p>
+            <p>Skyrim is about your character who you will decide what it will be becoming a "Dragonborn" who will have to defeat one of the strongest dragons in the world in order to save the world</p>
+            <p>Finally Gang Beasts is an amazing game to play with family or friends because of the fun and simple gameplay that comes with it. You have to knock eachother out and kick them out of the map in order to win</p>
+        </div>
+        <div class="container">
+        <footer>
+            &copy;Michael Tapia
+        </footer>
+    </div>
+    </main>
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+</body>
+</html>
